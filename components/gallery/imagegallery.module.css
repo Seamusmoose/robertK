@@ -1,0 +1,27 @@
+.grid__layout {
+  position: relative;
+  margin: 0 auto;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(8, minmax(350px, 1fr));
+  overflow: hidden;
+  transition: all 3s;
+}
+
+.grid__item {
+  z-index: 0;
+  transform: scale(1.5);
+}
+
+.grid__item:hover span > img {
+  position: absolute;
+  /* transform: scale(3); */
+  transform: rotate(60deg);
+  background-color: red;
+  /* grid-column: span 2; */
+  z-index: 3;
+}
+
+/* .grid__container:nth-child(2) {
+  grid-column: span 2;
+} */
