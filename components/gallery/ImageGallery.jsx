@@ -8,7 +8,7 @@ const ImageGallery = () => {
   const handleMouseLeave = () => setMouseHovering(false);
   console.log(isMouseHovering);
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.grid__layout}>
         {[
           "1",
