@@ -1,14 +1,13 @@
 .container {
-  width: 80%;
-  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
 }
 
 .grid__layout {
-  background-color: black;
   display: grid;
-  grid-template-columns: repeat(4, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-auto-rows: 230px;
-  overflow: visible;
 }
 
 .grid__item {
@@ -22,12 +21,13 @@
   place-items: center center;
 }
 
-.grid__item:hover .grid__layout {
+/* .grid__item:hover .grid__layout {
   background: rgba(220, 160, 140, 0.5);
-}
+} */
 
 /* .grid__item:hover span > img {
   position: absolute;
   transform: rotate(10deg);
   z-index: 2;
 } */
+
